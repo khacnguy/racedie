@@ -1,0 +1,8 @@
+The program will stimulate a rolling dice game
+The program consists of 3 files:
+1. player_class.py
+contains the Player class
+2. game_class.py
+contains the Game class
+3. main.py
+execution
