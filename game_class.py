@@ -18,6 +18,10 @@ class Game:
         #game icon for use
         self.game_icon = ['X','O'] + list(string.ascii_uppercase)
 
+    def begin(self):
+        print('Game begins')
+        self.display_state()
+
     def display_state(self):
         #display the state of the game
         print('*' * self.length*3)
