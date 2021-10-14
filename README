@@ -6,3 +6,8 @@ contains the Player class
 contains the Game class
 3. main.py
 execution
+
+To run the program, save 3 files in the same folder.
+Run the main file.
+Or if you want to run them in the terminal
+usage: python3 main.py <length> <number of player>
