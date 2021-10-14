@@ -59,6 +59,7 @@ class Game:
         return False
 
     def print_results(self):
+        #print out the winner of the game
         for player in self.player_list:
             if player.pos == self.length:
                 print('{} is the winner'.format(self.game_icon[self.player_list.index(player)]))
