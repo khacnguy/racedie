@@ -3,8 +3,10 @@ class Player:
     def __init__(self,length):
         #initial position is 1
         self.pos = 1
+
         #store the rolling history
         self.die_rolled = []
+
         #the length of the game
         self.length = length
 
