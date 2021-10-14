@@ -1,13 +1,12 @@
 from game_class import *
 
 #configure parameters
-GAME_LENGTH = 10
-PLAYER_AMOUNT = 3
+GAME_LENGTH = 20
+PLAYER_AMOUNT = 5
 
-game = Game(GAME_LENGTH,PLAYER_AMOUNT)
 if __name__ == '__main__':
-    print('Game begins')
-    game.display_state()
+    game = Game(GAME_LENGTH, PLAYER_AMOUNT)
+    game.begin()
     while game.check_game_over() is False:
         for player in game.player_list:
             input()
@@ -16,6 +15,5 @@ if __name__ == '__main__':
             game.update_position(game.player_list.index(player))
             game.display_state()
             if game.check_game_over() is True:
-                print('a')
                 break
     game.print_results()
